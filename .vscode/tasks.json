@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "clang build active file",
+            "command": "/usr/bin/clang",
+            "args": [
+                "-std=c17",
+                "-g",
+                "./src/*.c",
+                "/usr/lib/x86_64-linux-gnu/libtesseract.so",
+                "/usr/lib/x86_64-linux-gnu/liblept.so",
+                "-I",
+                "/usr/include/tesseract",
+                "-I",
+                "/usr/include/leptonica",
+                "-o",
+                "output",
+                "-v"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}",
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

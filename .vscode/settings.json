@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "plarform.h": "c",
+        "capi.h":"c"
+    },
+    "C_Cpp.errorSquiggles":"Enabled"
+}
